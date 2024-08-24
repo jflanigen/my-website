@@ -1,73 +1,77 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 function HomePage(){
-    // useNavigate to redirect to specified URL
-    const navigate = useNavigate();
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []
+    );
 
-    // ButtonToAbout defines button component to take user to the About page
+    const navigate = useNavigate();
     function ButtonToAbout(){
         const clickButton = () =>{
             navigate('/about');
         };
         return (
-            <button onClick={clickButton} className="bg-gray-200 text-teal-500 text-2xl p-4 rounded shadow-2xl shadow-teal-500/60 my-4 
-                                                    hover:bg-teal-500 hover:text-gray-200 hover:shadow-teal-500/0">Learn More</button>
+            <>
+                <button onClick={clickButton} className="bg-gray-200 text-teal-500 text-2xl p-4 rounded shadow-2xl shadow-teal-500/60 my-4 
+                                                        hover:bg-teal-500 hover:text-gray-200 hover:shadow-teal-500/0">Learn More</button>
+            </>
         );
     }
-
-    // ButtonToProjectTetris defines button component to take user to the tetris project page
-    function ButtonToProjectTetris(){
-        const clickButton = () =>{
-            navigate('/project-tetris');
-        };
-        return (
-            <button onClick={clickButton} className="bg-gray-200 text-cyan-500 text-lg p-4 rounded shadow-lg shadow-cyan-500/60 my-4 
-                                                    hover:bg-cyan-500 hover:text-gray-200 hover:shadow-cyan-500/0">About Tetris</button>
-        );
-    }
-
-    // ButtonToProjectCompiler defines button component to take user to the compiler project page
-    function ButtonToProjectCompiler(){
-        const clickButton = () =>{
-            navigate('/project-compiler');
-        };
-        return (
-            <button onClick={clickButton} className="bg-gray-200 text-orange-600 text-lg p-4 rounded shadow-lg shadow-orange-600/60 my-4 
-                                                    hover:bg-orange-600 hover:text-gray-200 hover:shadow-orange-600/0">About Compiler</button>
-        );
-    }
-
-    // ButtonToProjectCompiler defines button component to take user to the compiler project page
-    function ButtonToProjectKeyRacer(){
-        const clickButton = () =>{
-            navigate('/project-keyracer');
-        };
-        return (
-            <button onClick={clickButton} className="bg-gray-200 text-lime-600 text-lg p-4 rounded shadow-lg shadow-lime-600/60 my-4 
-                                                    hover:bg-lime-600 hover:text-gray-200 hover:shadow-lime-600/0">About Key Racer</button>
-        );
-    }
-
-    function ButtonToProjectPortfolio(){
-        return (
-            <button className="bg-gray-200 text-red-600 text-lg p-4 rounded shadow-lg shadow-red-600/60 my-4 
-                                hover:bg-red-600 hover:text-gray-200 hover:shadow-red-600/0">Coming soon...</button>
-        );        
-    }
-
-    // ButtonToExperince defines button component to take user to the Experience page
     function ButtonToExperience(){
         const clickButton = () =>{
             navigate('/experience');
         };
         return (
-            <button onClick={clickButton} className="bg-gray-200 text-fuchsia-600 text-2xl p-4 rounded shadow-2xl shadow-fuchsia-600/60 my-4 
-                                                    hover:bg-fuchsia-600 hover:text-gray-200 hover:shadow-fuchsia-600/0">Learn More</button>
+            <>
+                <button onClick={clickButton} className="bg-gray-200 text-fuchsia-600 text-2xl p-4 rounded shadow-2xl shadow-fuchsia-600/60 my-4 
+                                                        hover:bg-fuchsia-600 hover:text-gray-200 hover:shadow-fuchsia-600/0">Learn More</button>
+            </>    
+        );
+    }    
+    function ButtonToProjectCompiler(){
+        const clickButton = () =>{
+            navigate('/project-compiler');
+        };
+        return (
+            <>
+                <button onClick={clickButton} className="bg-gray-200 text-orange-600 text-lg p-4 rounded shadow-lg shadow-orange-600/60 my-4 
+                                                        hover:bg-orange-600 hover:text-gray-200 hover:shadow-orange-600/0">About Compiler</button>
+            </>
+        );
+    }    
+    function ButtonToProjectKeyRacer(){
+        const clickButton = () =>{
+            navigate('/project-keyracer');
+        };
+        return (
+            <>
+                <button onClick={clickButton} className="bg-gray-200 text-lime-600 text-lg p-4 rounded shadow-lg shadow-lime-600/60 my-4 
+                                                        hover:bg-lime-600 hover:text-gray-200 hover:shadow-lime-600/0">About Key Racer</button>
+            </>
+        );
+    }
+    function ButtonToProjectPortfolio(){
+        return (
+            <>
+                <button className="bg-gray-200 text-red-600 text-lg p-4 rounded shadow-lg shadow-red-600/60 my-4 
+                                    hover:bg-red-600 hover:text-gray-200 hover:shadow-red-600/0">Coming soon...</button>
+            </>
+        );        
+    }
+    function ButtonToProjectTetris(){
+        const clickButton = () =>{
+            navigate('/project-tetris');
+        };
+        return (
+            <>
+                <button onClick={clickButton} className="bg-gray-200 text-cyan-500 text-lg p-4 rounded shadow-lg shadow-cyan-500/60 my-4 
+                                                        hover:bg-cyan-500 hover:text-gray-200 hover:shadow-cyan-500/0">About Tetris</button>
+            </>
         );
     }
 
-    // below is the main Homepage component to be returned and used as the "./" route
     return ( 
     <>
         <div className="flex flex-col items-center justify-center min-h-screen">
@@ -75,7 +79,7 @@ function HomePage(){
 
             {/* header of homepage */}
             <h2 className="text-center text-white mt-72 mb-16 text-5xl italic">hello! my name is</h2>
-            <h1 className="text-center text-white my-4 text-8xl">&gt; Joey Flanigen &lt;</h1>
+            <h1 className="text-center text-white my-4 text-8xl"><span className="text-teal-500">&gt;</span> Joey Flanigen <span className="text-teal-500">&lt;</span></h1>
             <h3 className="text-center text-white mt-24 text-5xl italic">and welcome to my website</h3>
 
             {/* content for About Me subsection */}
@@ -103,10 +107,10 @@ function HomePage(){
                 <p className="text-center text-gray-200 text-2xl mt-12">Below are some quick facts about me</p>
                 <div className="flex justify-center">
                     <ul className="text-gray-200 text-xl">
-                        <li className="mt-4 mb-1"><span className="text-2xl text-teal-500">~ </span>Junior at Boston University</li>
+                        <li className="mt-4 mb-1"><span className="text-2xl text-teal-500">~ </span>Based out of Boston, MA and Redmond, WA</li>
+                        <li className="mt-1 mb-1"><span className="text-2xl text-teal-500">~ </span>Junior at Boston University</li>
                         <li className="mt-1 mb-1"><span className="text-2xl text-teal-500">~ </span>Major in Computer Science (3.59 GPA, 3x Semester Dean's List)</li>
                         <li className="mt-1 mb-1"><span className="text-2xl text-teal-500">~ </span>Minor in Mathematics</li>
-                        <li className="mt-1 mb-1"><span className="text-2xl text-teal-500">~ </span>Based out of Boston, MA and Redmond, WA</li>
                         <li className="mt-1 mb-1"><span className="text-2xl text-teal-500">~ </span>Currently living in Boston for my studies</li>
                         <li className="mt-1 mb-1"><span className="text-2xl text-teal-500">~ </span>Interested in software development, finance, and their intersection</li>
                         <li className="mt-1 mb-1"><span className="text-2xl text-teal-500">~ </span>Most capable of programming in Java, Python, JavaScript, and more</li>
@@ -133,11 +137,11 @@ function HomePage(){
                     <div className="flex justify-center"><ButtonToProjectTetris /></div>
                 </div>
                 <div className="flex flex-col justify-center">
-                    <h2 className="text-center text-gray-200 underline text-3xl decoration-4 underline-offset-8 font-medium decoration-orange-600 mt-8">Compiler for Custom Language</h2>
+                    <h2 className="text-center text-gray-200 underline text-3xl decoration-4 underline-offset-8 font-medium decoration-orange-600 mt-8">Functional Programming Language Compiler</h2>
                     <ul className="mx-auto text-gray-200 text-xl">
-                        <li className="mt-4 mb-1"><span className="text-2xl text-orange-600">~ </span>Desugared high-level program into list of low-level expressions</li>
-                        <li className="mt-1 mb-1"><span className="text-2xl text-orange-600">~ </span>Scored up to 84 points in a single session</li>
-                        <li className="mt-1 mb-1"><span className="text-2xl text-orange-600">~ </span>Strategically designed parameters of input vector and reward function</li>
+                        <li className="mt-4 mb-1"><span className="text-2xl text-orange-600">~ </span>Desugared high-level program into low-level expressions</li>
+                        <li className="mt-1 mb-1"><span className="text-2xl text-orange-600">~ </span>Translated low-level expressions into base stack-oriented code</li>
+                        <li className="mt-1 mb-1"><span className="text-2xl text-orange-600">~ </span>Serialized stack-oriented code into string</li>
                     </ul>
                     <div className="flex justify-center"><ButtonToProjectCompiler /></div>
                 </div>
