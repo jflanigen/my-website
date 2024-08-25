@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/my-website/static/css/main.b8847e0e.css",
+    "main.js": "/my-website/static/js/main.d7e4cb8a.js",
+    "static/media/hike2.jpg": "/my-website/static/media/hike2.6b078135014b1c83d248.jpg",
+    "static/media/hike3.jpg": "/my-website/static/media/hike3.38392bd3c1760f143fa3.jpg",
+    "static/media/pointingHike.jpg": "/my-website/static/media/pointingHike.c68ea228e1f9189d0ac6.jpg",
+    "static/media/hike1.jpg": "/my-website/static/media/hike1.2f4b9259df3faf488082.jpg",
+    "static/media/hikeIso.jpg": "/my-website/static/media/hikeIso.34a66eee333d31419914.jpg",
+    "static/media/youngFootball.PNG": "/my-website/static/media/youngFootball.804b20403832e135fd85.PNG",
+    "static/media/BU_Fitrec.jpg": "/my-website/static/media/BU_Fitrec.2134ad53c78e3bbf2f76.jpg",
+    "static/media/oldFootball.jpg": "/my-website/static/media/oldFootball.58993eba823fc682f371.jpg",
+    "static/media/chessStats.png": "/my-website/static/media/chessStats.ff26d2e3507b5ef95d61.png",
+    "index.html": "/my-website/index.html",
+    "main.b8847e0e.css.map": "/my-website/static/css/main.b8847e0e.css.map",
+    "main.d7e4cb8a.js.map": "/my-website/static/js/main.d7e4cb8a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b8847e0e.css",
+    "static/js/main.d7e4cb8a.js"
+  ]
+}
