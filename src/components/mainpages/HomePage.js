@@ -14,7 +14,7 @@ function HomePage(){
         };
         return (
             <>
-                <button onClick={clickButton} className="bg-gray-200 text-teal-500 text-2xl p-4 rounded shadow-2xl shadow-teal-500/60 my-4 
+                <button onClick={clickButton} className="transition ease-in-out duration-300 hover:scale-110 bg-gray-200 text-teal-500 text-2xl p-4 rounded shadow-2xl shadow-teal-500/60 my-4 
                                                         hover:bg-teal-500 hover:text-gray-200 hover:shadow-teal-500/0">Learn More</button>
             </>
         );
@@ -25,7 +25,7 @@ function HomePage(){
         };
         return (
             <>
-                <button onClick={clickButton} className="bg-gray-200 text-fuchsia-600 text-2xl p-4 rounded shadow-2xl shadow-fuchsia-600/60 my-4 
+                <button onClick={clickButton} className="transition ease-in-out duration-300 hover:scale-110 bg-gray-200 text-fuchsia-600 text-2xl p-4 rounded shadow-2xl shadow-fuchsia-600/60 my-4 
                                                         hover:bg-fuchsia-600 hover:text-gray-200 hover:shadow-fuchsia-600/0">Learn More</button>
             </>    
         );
@@ -36,7 +36,7 @@ function HomePage(){
         };
         return (
             <>
-                <button onClick={clickButton} className="bg-gray-200 text-orange-600 text-lg p-4 rounded shadow-lg shadow-orange-600/60 my-4 
+                <button onClick={clickButton} className="transition ease-in-out duration-300 hover:scale-110 bg-gray-200 text-orange-600 text-lg p-4 rounded shadow-lg shadow-orange-600/60 my-4 
                                                         hover:bg-orange-600 hover:text-gray-200 hover:shadow-orange-600/0">About Compiler</button>
             </>
         );
@@ -47,7 +47,7 @@ function HomePage(){
         };
         return (
             <>
-                <button onClick={clickButton} className="bg-gray-200 text-lime-600 text-lg p-4 rounded shadow-lg shadow-lime-600/60 my-4 
+                <button onClick={clickButton} className="transition ease-in-out duration-300 hover:scale-110 bg-gray-200 text-lime-600 text-lg p-4 rounded shadow-lg shadow-lime-600/60 my-4 
                                                         hover:bg-lime-600 hover:text-gray-200 hover:shadow-lime-600/0">About Key Racer</button>
             </>
         );
@@ -55,7 +55,7 @@ function HomePage(){
     function ButtonToProjectPortfolio(){
         return (
             <>
-                <button className="bg-gray-200 text-red-600 text-lg p-4 rounded shadow-lg shadow-red-600/60 my-4 
+                <button className="transition ease-in-out duration-300 hover:scale-110 bg-gray-200 text-red-600 text-lg p-4 rounded shadow-lg shadow-red-600/60 my-4 
                                     hover:bg-red-600 hover:text-gray-200 hover:shadow-red-600/0">Coming soon...</button>
             </>
         );        
@@ -66,7 +66,7 @@ function HomePage(){
         };
         return (
             <>
-                <button onClick={clickButton} className="bg-gray-200 text-cyan-500 text-lg p-4 rounded shadow-lg shadow-cyan-500/60 my-4 
+                <button onClick={clickButton} className="transition ease-in-out duration-300 hover:scale-110 bg-gray-200 text-cyan-500 text-lg p-4 rounded shadow-lg shadow-cyan-500/60 my-4 
                                                         hover:bg-cyan-500 hover:text-gray-200 hover:shadow-cyan-500/0">About Tetris</button>
             </>
         );
@@ -78,22 +78,22 @@ function HomePage(){
             <p className="text-gray-700 text-sm underline decoration-gray-700">this website is not intended for mobile devices</p>
 
             {/* header of homepage */}
-            <h2 className="text-center text-white mt-72 mb-16 text-5xl italic">hello! my name is</h2>
+            <h2 className="text-center text-white mt-72 mb-16 text-5xl italic">hello<span className="text-teal-500">!</span> my name is</h2>
             <h1 className="text-center text-white my-4 text-8xl"><span className="text-teal-500">&gt;</span> Joey Flanigen <span className="text-teal-500">&lt;</span></h1>
-            <h3 className="text-center text-white mt-24 text-5xl italic">and welcome to my website</h3>
+            <h3 className="text-center text-white mt-24 text-5xl italic">and welcome to my website<span className="text-teal-500">.</span></h3>
 
             {/* content for About Me subsection */}
             <div className="bg-gray-700 text-black p-8 rounded shadow-2xl shadow-teal-500/90 w-11/12 mt-64 mb-16">
                 <div className="flex flex-row space-x-32 my-8 justify-center">
                     <a className="https://github.com/jflanigen" href="https://github.com/jflanigen" target="_blank" rel="noopener noreferrer">
-                        <i className="fab fa-github text-white text-8xl"></i>
+                        <i className="transition ease-in-out duration-300 hover:scale-110 fab fa-github text-white text-8xl"></i>
                     </a>
                     <div className="flex flex-col my-2 text-center text-gray-200">
                         <i className="fas fa-envelope text-white text-8xl"></i>
                         <p className="text-lg">joeyflan@bu.edu</p>
                     </div>
                     <a className="https://www.linkedin.com/in/joseph-flanigen-91b595236/" href="https://www.linkedin.com/in/joseph-flanigen-91b595236/" target="_blank" rel="noopener noreferrer">
-                        <i className="fab fa-linkedin text-white text-8xl"></i>
+                        <i className="transition ease-in-out duration-300 hover:scale-110 fab fa-linkedin text-white text-8xl"></i>
                     </a>
                 </div>
 
@@ -101,14 +101,14 @@ function HomePage(){
                 <p className="text-center text-gray-200 text-2xl mt-12">Below are some quick facts about me</p>
                 <div className="flex justify-center">
                     <ul className="text-gray-200 text-xl">
-                        <li className="mt-4 mb-1"><span className="text-2xl text-teal-500">~ </span>Based out of Boston, MA and Redmond, WA</li>
+                        <li className="mt-4 mb-1"><span className="text-2xl text-teal-500">~ </span>Based out of <span className="text-teal-500">Boston</span>, <span className="text-teal-500">MA</span> and <span className="text-teal-500">Redmond</span>, <span className="text-teal-500">WA</span></li>
                         <li className="mt-1 mb-1"><span className="text-2xl text-teal-500">~ </span>Junior at Boston University</li>
-                        <li className="mt-1 mb-1"><span className="text-2xl text-teal-500">~ </span>Major in Computer Science (3.59 GPA, 3x Semester Dean's List)</li>
-                        <li className="mt-1 mb-1"><span className="text-2xl text-teal-500">~ </span>Minor in Mathematics</li>
+                        <li className="mt-1 mb-1"><span className="text-2xl text-teal-500">~ </span>Major in <span className="text-teal-500">Computer Science</span> (<span className="text-teal-500">3.59</span> GPA, <span className="text-teal-500">3x</span> Semester Dean's List)</li>
+                        <li className="mt-1 mb-1"><span className="text-2xl text-teal-500">~ </span>Minor in <span className="text-teal-500">Mathematics</span></li>
                         <li className="mt-1 mb-1"><span className="text-2xl text-teal-500">~ </span>Currently living in Boston for my studies</li>
-                        <li className="mt-1 mb-1"><span className="text-2xl text-teal-500">~ </span>Interested in software development, finance, and their intersection</li>
-                        <li className="mt-1 mb-1"><span className="text-2xl text-teal-500">~ </span>Most capable of programming in Java, Python, JavaScript, and more</li>
-                        <li className="mt-1 mb-1"><span className="text-2xl text-teal-500">~ </span>Familiar with technologies like React, Django, TailwindCSS, NumPy, Node.js, git, and more</li>
+                        <li className="mt-1 mb-1"><span className="text-2xl text-teal-500">~ </span>Interested in software development, machine learning, finance, and their intersections</li>
+                        <li className="mt-1 mb-1"><span className="text-2xl text-teal-500">~ </span>Most capable of programming in <span className="text-teal-500">Java</span>, <span className="text-teal-500">Python</span>, <span className="text-teal-500">JavaScript</span>, and more</li>
+                        <li className="mt-1 mb-1"><span className="text-2xl text-teal-500">~ </span>Familiar with technologies like <span className="text-teal-500">React</span>, <span className="text-teal-500">Git</span>, <span className="text-teal-500">Django</span>, <span className="text-teal-500">TailwindCSS</span>, <span className="text-teal-500">NumPy</span>, <span className="text-teal-500">Node.js</span>, and more</li>
 
                     </ul>
                 </div>
@@ -122,11 +122,12 @@ function HomePage(){
                 <h1 className="text-center text-gray-200 underline text-6xl decoration-4 underline-offset-8 font-medium decoration-red-600 my-8">- Projects -</h1>
                 <p className="text-center text-gray-200 text-2xl mt-12">Here are some of my most substantial personal and class projects.</p>
                 <div className="flex flex-col justify-center">
-                    <h2 className="text-center text-gray-200 underline text-3xl decoration-4 underline-offset-8 font-medium decoration-cyan-500 mt-8">Tetris Agent (NN)</h2>
+                    <h2 className="text-center text-gray-200 underline text-3xl decoration-4 underline-offset-8 font-medium decoration-cyan-500 mt-8">Tetris Neural Network</h2>
                     <ul className="mx-auto text-gray-200 text-xl">
                         <li className="mt-4 mb-1"><span className="text-2xl text-cyan-500">~ </span>Implemented and trained a neural network to play Tetris</li>
                         <li className="mt-1 mb-1"><span className="text-2xl text-cyan-500">~ </span>Scored up to 84 points in a single session</li>
                         <li className="mt-1 mb-1"><span className="text-2xl text-cyan-500">~ </span>Strategically designed parameters of input vector and reward function</li>
+                        <li className="mt-1 mb-1"><span className="text-2xl text-cyan-500">~ </span>Project demo on the dedicated Tetris page</li>
                     </ul>
                     <div className="flex justify-center"><ButtonToProjectTetris /></div>
                 </div>

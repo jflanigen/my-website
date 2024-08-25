@@ -15,7 +15,7 @@ function TetrisPage(){
         };
         return (
             <>
-                <button onClick={clickButton} className="mt-16 bg-cyan-500 text-gray-200 text-2xl p-4 rounded shadow-2xl shadow-cyan-500/60 my-4 
+                <button onClick={clickButton} className="transition ease-in-out duration-300 hover:scale-110 mt-16 bg-cyan-500 text-gray-200 text-2xl p-4 rounded shadow-2xl shadow-cyan-500/60 my-4 
                                                         hover:bg-gray-200 hover:text-cyan-500 hover:shadow-gray-200/0">Go Back</button>
             </>
         );
@@ -29,6 +29,7 @@ function TetrisPage(){
                 <div className="flex flex-col justify-center text-center">
                     <h1 className="underline text-5xl decoration-4 underline-offset-8 font-medium decoration-cyan-500 my-8">- Tetris Neural Network -</h1>
                     <p className="text-xl my-2">Class project with source code available on request.</p>
+                    <iframe className="w-1/4 h-64 mx-auto mt-8 mb-4 rounded shadow-xl shadow-cyan-500/40" src="https://www.youtube.com/embed/Gv1lrZEVXyA?si=Ah4KmBVWndW2HJrd"></iframe>
                     <h2 className="underline text-3xl decoration-4 underline-offset-8 font-medium decoration-cyan-500 mt-8 my-4">Tech Stack</h2>
                     <ul>
                         <li className="text-xl"><span className="text-2xl text-cyan-500">~</span> Java</li>

@@ -15,7 +15,7 @@ function KeyRacerPage(){
         };
         return (
             <>
-                <button onClick={clickButton} className="mt-16 bg-lime-600 text-gray-200 text-2xl p-4 rounded shadow-2xl shadow-lime-600/60 my-4 
+                <button onClick={clickButton} className="transition ease-in-out duration-300 hover:scale-110 mt-16 bg-lime-600 text-gray-200 text-2xl p-4 rounded shadow-2xl shadow-lime-600/60 my-4 
                                                         hover:bg-gray-200 hover:text-lime-600 hover:shadow-gray-200/0">Go Back</button>
             </>
         );

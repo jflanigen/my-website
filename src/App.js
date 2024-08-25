@@ -9,7 +9,7 @@ import KeyRacerPage from './components/projects/KeyRacer';
 
 function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-500">
+    <div className="min-h-screen flex items-center justify-center bg-gray-500 cursor-default">
       <div className="bg-fixed bg-gradient-to-r from-slate-900 from-5% via-slate-800 via-50% to-slate-900 to-95% h-5/6 w-full">
         <Router>
           <Routes>
