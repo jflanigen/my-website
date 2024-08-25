@@ -29,6 +29,8 @@ function KeyRacerPage(){
                 <div className="flex flex-col justify-center text-center">
                     <h1 className="underline text-3xl decoration-4 underline-offset-8 font-medium decoration-lime-600 my-8">- KeyRacer Web Application -</h1>
                     <p className="text-xl my-2">Personal project on GitHub.</p>
+                    <a className="text-lg text-cyan-500 mt-4" href="https://keyracer-project.onrender.com/" target="_blank" rel="noopener noreferrer">Link to game</a>
+                    <p className="text-md text-gray-200">May take about 30 seconds to load</p>
                     <h2 className="underline text-3xl decoration-4 underline-offset-8 font-medium decoration-lime-600 mt-8 my-4">Tech Stack</h2>
                     <ul>
                         <li className="text-xl"><span className="text-2xl text-lime-600">~</span> JavaScript</li>

@@ -85,24 +85,18 @@ function HomePage(){
             {/* content for About Me subsection */}
             <div className="bg-gray-700 text-black p-8 rounded shadow-2xl shadow-teal-500/90 w-11/12 mt-64 mb-16">
                 <div className="flex flex-row space-x-32 my-8 justify-center">
-                    <div className="flex flex-col my-2 text-center text-gray-200">
-                        <a className="https://github.com/jflanigen" rel="noopener noreferrer">
-                            <i className="fab fa-github text-white text-8xl"></i>
-                        </a>
-                        <a className="text-lg" href="https://github.com/jflanigen">[click here]</a>
-                    </div>
+                    <a className="https://github.com/jflanigen" href="https://github.com/jflanigen" target="_blank" rel="noopener noreferrer">
+                        <i className="fab fa-github text-white text-8xl"></i>
+                    </a>
                     <div className="flex flex-col my-2 text-center text-gray-200">
                         <i className="fas fa-envelope text-white text-8xl"></i>
                         <p className="text-lg">joeyflan@bu.edu</p>
                     </div>
-                    <div className="flex flex-col my-2 text-center text-gray-200">
-                        <a className="https://www.linkedin.com/in/joseph-flanigen-91b595236/" rel="noopener noreferrer">
-                            <i className="fab fa-linkedin text-white text-8xl"></i>
-                        </a>
-                        <a className="text-lg" href="https://www.linkedin.com/in/joseph-flanigen-91b595236/">[click here]</a>
-                    </div>
-
+                    <a className="https://www.linkedin.com/in/joseph-flanigen-91b595236/" href="https://www.linkedin.com/in/joseph-flanigen-91b595236/" target="_blank" rel="noopener noreferrer">
+                        <i className="fab fa-linkedin text-white text-8xl"></i>
+                    </a>
                 </div>
+
                 <h1 className="text-center text-gray-200 underline text-6xl decoration-4 underline-offset-8 font-medium decoration-teal-500 my-8">- About Me -</h1>
                 <p className="text-center text-gray-200 text-2xl mt-12">Below are some quick facts about me</p>
                 <div className="flex justify-center">
