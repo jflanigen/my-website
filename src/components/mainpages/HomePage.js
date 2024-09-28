@@ -75,16 +75,15 @@ function HomePage(){
     return ( 
     <>
         <div className="flex flex-col items-center justify-center min-h-screen">
-            <p className="text-gray-700 text-sm underline decoration-gray-700">this website is not intended for mobile devices</p>
 
             {/* header of homepage */}
             <h2 className="text-center text-white mt-72 mb-16 text-5xl italic">hello<span className="text-teal-500">!</span> my name is</h2>
-            <h1 className="text-center text-white my-4 text-8xl"><span className="text-teal-500">&gt;</span> Joey Flanigen <span className="text-teal-500">&lt;</span></h1>
+            <h1 className="text-center text-white my-4 text-6xl md:text-8xl"><span className="text-teal-500">&gt;</span> Joey Flanigen <span className="text-teal-500">&lt;</span></h1>
             <h3 className="text-center text-white mt-24 text-5xl italic">and welcome to my website<span className="text-teal-500">.</span></h3>
 
             {/* content for About Me subsection */}
             <div className="bg-gray-700 text-black p-8 rounded shadow-2xl shadow-teal-500/90 w-11/12 mt-64 mb-16">
-                <div className="flex flex-row space-x-32 my-8 justify-center">
+                <div className="flex flex-row space-x-16 md:space-x-32 my-8 justify-center">
                     <a className="https://github.com/jflanigen" href="https://github.com/jflanigen" target="_blank" rel="noopener noreferrer">
                         <i className="transition ease-in-out duration-300 hover:scale-110 fab fa-github text-white text-8xl"></i>
                     </a>
@@ -112,7 +111,7 @@ function HomePage(){
 
                     </ul>
                 </div>
-                <p className="text-center text-gray-200 text-xl mt-12 mb-6">Your time is valuable, so I've kept things short above - if you would like to learn more about me, just click the button below.</p>
+                <p className="text-center text-gray-200 text-xl mt-12 mb-6 mx-24 lg:mx-64">Your time is valuable, so I've kept things short above - if you would like to learn more about me, just click the button below.</p>
                 <div className="flex justify-center"><ButtonToAbout /></div>
             </div>
             {/* end of content for About Me */}
@@ -206,7 +205,7 @@ function HomePage(){
                     </ul>
                 </div>
 
-                <p className="text-center text-gray-200 text-xl mt-12 mb-6 mx-64">If you would like to learn more specifically about what I learned, the technologies I used in these classes, or about my work experience then press the button below.</p>
+                <p className="text-center text-gray-200 text-xl mt-12 mb-6 mx-24 lg:mx-64">Press button if you would like to learn more specifically about what I learned, the technologies I used in these classes.</p>
                 <div className="flex justify-center"><ButtonToExperience /></div>
             </div> 
             {/* end of content for Experience */}

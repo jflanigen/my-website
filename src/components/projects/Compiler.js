@@ -34,7 +34,7 @@ function CompilerPage(){
                         <li className="text-xl"><span className="text-2xl text-orange-600">~</span> OCaml</li>
                     </ul>
                     <h2 className="underline text-3xl decoration-4 underline-offset-8 font-medium decoration-orange-600 mt-8 my-4">Description</h2>
-                    <div className="text-xl mx-64">
+                    <div className="text-xl mx-24">
                         <p className="my-4">The final project in a series of class projects that set me up to be able to implement my own compiler for my Concepts of Programming Languages course (CS320). I was provided a few different grammar sets that were specific to each step of the compilation process that was performed upon being provided a source program in a custom, high-level, stack-oriented, functional programming language (like OCaml). Here is the process outlined for you:</p>
                         <h2 className="underline text-3xl decoration-4 underline-offset-8 font-medium decoration-orange-600 my-4 mb-8">Compilation Process</h2>
                         <ul>

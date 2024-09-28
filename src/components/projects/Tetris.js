@@ -35,13 +35,13 @@ function TetrisPage(){
                         <li className="text-xl"><span className="text-2xl text-cyan-500">~</span> Java</li>
                     </ul>
                     <h2 className="underline text-3xl decoration-4 underline-offset-8 font-medium decoration-cyan-500 mt-8 my-4">Description</h2>
-                    <div className="text-xl mx-64">
+                    <div className="text-xl mx-24">
                         <p className="my-4">This project was a lot of fun and is my favorite of the ones I have listed on this website. The project served as the final for my Introduction to Artificial Intelligence course (CS440). For what it’s worth, I received an A in the class, an A on the project, and significant extra credit on this assignment for averaging a significant score in the final evaluation games after submitting the model I trained. </p>
                         <p className="my-4">The model was trained on custom training parameters (learning rate, discount factor, batch size, # of training steps, replay buffer size, etc.) that I saw befitting to optimize the training process.</p>
                         <p className="my-4">Since it was a class project, I was bound to the custom Java framework provided to us by our professor (not that it wasn’t a great tool in itself, but I couldn’t use the industry standard PyTorch/TensorFlow packages) but I believe, conceptually, the content is much of the same to its Python counterparts. Ultimately, I was responsible for implementing various methods that were going to assist in training the model:</p>
                         <h2 className="underline text-3xl decoration-4 underline-offset-8 font-medium decoration-cyan-500 my-4 mb-8">Methods</h2>
                         <ul>
-                            <li className="my-4"><span className="text-cyan-500">1. getQFunctionInput: </span>Describing the current state of the game to the model through a row-vector which would be used as input to the neural network. I was provided information of the state through a “GameView” object and “Mino” object with documentation about how to extract relevant information from both objects. My row-vector ended up being dependent on five different factors of the state: 
+                            <li className="my-4"><span className="text-cyan-500 text-center">1. getQFunctionInput: </span>Describing the current state of the game to the model through a row-vector which would be used as input to the neural network. I was provided information of the state through a “GameView” object and “Mino” object with documentation about how to extract relevant information from both objects. My row-vector ended up being dependent on five different factors of the state: 
                                 <ul className="text-left ml-32 mx-auto">
                                     <li className="my-4"><span className="text-2xl text-cyan-500">~ </span>Number of holes (gaps below topmost placed square in a given column)</li>
                                     <li className="my-4"><span className="text-2xl text-cyan-500">~ </span>Difference between tallest and shortest towers</li>
